@@ -51,4 +51,21 @@ Customer.getCustomerGivenId= function(id) {
     }
 }
 
+Customer.updateOrAddCustomer = function(id, customer) {
+    var i = 0;
+    for (i = 0; i < Customer.list.length; i++) {
+        console.log("reached here custoomer id " + Customer.list[i].id + " name " + Customer.list[i].firstName);  
+
+        
+        if (Customer.list[i].id == id {
+            console.log("returning here " + id);
+            customer.list[i] = customer;
+            return "Customer Updated";
+        }
+    }
+    
+    Customer.list.push(customer);
+    return "new Customer added"
+}
+
 
